@@ -2,12 +2,12 @@ import java.util.Scanner;
 
 public class BMIcalculator {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
 
         
 
         System.out.println("Enter the number of persons:");
-        int number = scanner.nextInt();
+        int number = sc.nextInt();
 
         
         double[][] personData = new double[number][3];
@@ -69,6 +69,6 @@ public class BMIcalculator {
                     weightStatus[i]);   // Weight Status
         }
 
-        scanner.close();
+        sc.close();
     }
 }
